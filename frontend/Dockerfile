@@ -16,7 +16,7 @@ COPY . .
 RUN npm run build
 
 # Production stage
-FROM nginx:alpine@sha256:54f2a904c251d5a34adf545a72d32515a15e08418dae0266e23be2e18c66fefa
+FROM nginx:alpine@sha256:4a73073bd557c65b759505da037898b61f1be6cbcc3c2c3aeac22d2a470c1752
 
 # Patch OS packages whose Alpine fix lands before the nginx base image is
 # rebuilt (e.g. libxml2 CVE-2026-6732, fixed in 2.13.9-r1). Keeps the release
